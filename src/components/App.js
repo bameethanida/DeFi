@@ -103,9 +103,7 @@ class App extends Component {
 
   render() {
     let content
-    if(this.state.loading) {
-      content = <p id="loader" className="text-center">Loading...</p>
-    } else {
+  
       content = <Main
         daiTokenBalance={this.state.daiTokenBalance}
         dappTokenBalance={this.state.dappTokenBalance}
@@ -113,7 +111,7 @@ class App extends Component {
         stakeTokens={this.stakeTokens}
         unstakeTokens={this.unstakeTokens}
       />
-    }
+  
 
     return (
       <div>
